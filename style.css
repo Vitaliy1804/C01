@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(14, 2, 26);
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.header_title{
+    padding: 15px;
+    color:white;
+    font-size: 23px;
+}
+.main {
+    padding: 10px auto;
+    background-color: cadetblue;
+}
+.container {
+    min-width: 320px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: cadetblue;
+    height: auto;
+}
+.footer {
+    display: block;
+    align-content: flex-end;
+    background-color: chocolate;
+}
+.vertical {
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+}
+.vertical_title{
+   text-align:center;
+   margin: 0 0 30px 0; 
+}
+.vertical_body{
+    max-width: 990px;
+    margin: 0 auto;
+}
+.vertical_row {
+    display: flex;
+    margin: 0 -22.5px;
+}
+.vertical_column{
+    padding: 0 22.5px;
+    flex: 0 0 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.vertical_item {
+    background-color: #445162;
+    color: white;
+    padding: 0 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid  #445162;
+    display: flex;
+    flex-direction: column;
+}
+.vertical_subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 12px 0;
+    text-align: center;
+}
+.vertical_label {
+    background-color: #fff;
+    text-align: center;
+    color: #445162;
+    padding: 15px 10px;
+    font-size: 40px;
+}
+.vertical_text {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 1 1 auto;
+}
+.vertical_text p {
+    margin: 0 0 15px 0;
+}
+.vertical_text p:last-child {
+    margin: 0;
+}
+.vertical_btn {
+    display: block;
+    margin: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color:#445161;
+    font-size: 18px;
+    background-color: #fff;
+    text-decoration: none;
+
+}
+
+.block {
+    padding: 50px;
+}
+.block__item {
+    margin: 0 0 20px 0;
+}
+.block__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+}
+.block__title:before,
+.block__title:after{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: seagreen;
+    position: absolute;
+    top: 8px;
+    transition: all 0.3s ease 0s;
+}
+.block__title:before {
+    transform: rotate(40deg);
+    left: 0;
+}
+.block__title:after{
+    transform: rotate(-40deg);
+    left: 8px;
+}
+
+.block__title.active:before,
+.block__title.active:after {
+    background-color: red;
+}
+.block__title.active:before {
+    transform: rotate(-40deg);
+}
+.block__title.active:after {
+    transform: rotate(40deg);
+}
+.block__text {
+    padding: 10px 0px 0px 0px;
+    display: none;
+}
+
+/* @media (min-width: 800px) and (max-width: 1200px) {
+    .vertical_column {
+        flex: 0 1 25%;
+    }
+} */
+/* ======================================================================================================================================== */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .vertical_column {
+        flex: 0 1 30%;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container{
+        background-color: sandybrown;
+    }
+    .vertical_column {
+        flex: 0 0 25%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { 
+    
+    .container{
+        background-color: rgb(88, 47, 11);
+    }
+    .vertical_column {
+        flex: 1 0 25%;
+        padding: 0 60px;
+
+    }
+ } */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)  { 
+    .container{
+        background-color: rgb(247, 18, 87);
+    }
+    .vertical_column {
+        flex: 0 0 17%;
+    }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body{
+        background-color: sandybrown;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+ }
+
+
+ 
+/* @media (min-width:320px) { smartphones, portrait iPhone, portrait 480x320 phones (Android)  } */
+/* @media (min-width:480px) {  smartphones, Android phones, landscape iPhone } */
+/* @media (min-width:600px) {  portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
+/* @media (min-width:801px) {  tablet, landscape iPad, lo-res laptops ands desktops  } */
+/* @media (min-width:1025px) {  big landscape tablets, laptops, and desktops } */
+/* @media (min-width:1281px) { hi-res laptops and desktops  } */
+ 
+    
